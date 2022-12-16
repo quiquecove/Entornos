@@ -1,0 +1,58 @@
+import java.io.*;
+public class Coche {
+	Integer cilindrada;
+	String color;
+	Double precio;
+	boolean isArrancado;
+
+	public static void main(String[] args) {
+		/**
+		 * Este metodo le da valor a los atributos de cilidrada, color y precio del coche, 
+		 * ademas de imprimir una serie de preguntas sobre el coche. Tambien acciona 
+		 * cada metodo para responder a cada pregunta formulada.
+		 */
+		Coche c;
+		c = new Coche();
+		c.cilindrada= 1800;
+		c.color = "plata";
+		c.precio = 25000.0;
+		System.out.println ("¿Qué coche es este?");
+		c.verCoche();
+		System.out.println("Vamos a arrancar el coche");
+		c.arrancar();
+		System.out.println ("¿Qué coche es este?");
+		c.verCoche();
+		System.out.println("Vamos a arrancar el coche");
+		c.arrancar();
+	
+		
+	}
+
+	 void arrancar() {
+		 //Este metodo comprueba que el coche esta arrancado, imprimiendo un mensaje u otro si lo esta o no.
+		if (isArrancado != true) {
+		isArrancado = true;
+		System.out.println ("¡¡¡Brrrrrrr!!! El coche acaba de arrancar.");
+		} else {
+		System.out.println ("¡¡¡Kisch, kishch!!! El coche ya está arrancado.");
+		}
+		
+	}
+	
+	 void verCoche() {
+		 
+		 /**
+		  * Este metodo imprime la informacion del coche, cogiendo los datos de los atributos del main.
+		  * Ademas comprueba si el coche esta arrancado o no, imprimiendo mensajes diferentes en cada caso.
+		  */
+		System.out.println("Este coche es de color " + color + " tiene una cilindrada de "+
+		cilindrada + " y cuesta " + precio + " euros.");
+		if (isArrancado == true) {
+		System.out.println ("Ahora mismo está arrancado.");
+		} else {
+	
+		System.out.println ("Ahora mismo está parado.");
+		}
+		}
+
+}

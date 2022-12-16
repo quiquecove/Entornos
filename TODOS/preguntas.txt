@@ -1,0 +1,18 @@
+en poo a que nos referimos con instanciacion
+
+	Todas son correctas
+
+
+en Poo q se considera una buena practica
+
+	Metodos publicos atributos privados
+
+
+En poo que es un constructor
+
+	Un metodo q tiene el nombre de la clase
+
+
+En java, quien se encarga de destruir objetos
+
+	Si no lo hace el programador, es el recolector de basura automatico
